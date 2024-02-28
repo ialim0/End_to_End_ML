@@ -15,8 +15,9 @@
       padding: 0;
     }
     .container {
+
       max-width: 400px;
-      margin: 0 auto;
+      margin:20px  auto;
       padding: 20px;
       background-color: #fff;
       border-radius: 5px;
@@ -58,7 +59,7 @@
 </head>
 <body>
   <div class="container">
-    <h1>Boston House Price Prediction</h1>
+    <h1> House Price Prediction</h1>
     <form action="{{ url_for('predict')}}" method="post">
       <input type="text" name="CRIM" placeholder="Crime rate per capita" required />
       <input type="text" name="ZN" placeholder="Residential land zoned for lots > 25,000 sq.ft." required />
